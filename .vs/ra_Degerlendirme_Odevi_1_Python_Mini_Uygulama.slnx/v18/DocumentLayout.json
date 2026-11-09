@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Berat\\Documents\\GitHub\\ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCCC548E-C96B-4717-8252-6D8B9E15F1E5}|ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama.pyproj|C:\\Users\\Berat\\Documents\\GitHub\\ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama\\ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama.pyproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|888888fd-3c4a-40da-aefb-5ac10f5e8b30",
+      "RelativeMoniker": "D:0:0:{BCCC548E-C96B-4717-8252-6D8B9E15F1E5}|ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama.pyproj|solutionrelative:ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama.pyproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|888888fd-3c4a-40da-aefb-5ac10f5e8b30"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama",
+              "DocumentMoniker": "C:\\Users\\Berat\\Documents\\GitHub\\ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama\\ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama.pyproj",
+              "RelativeDocumentMoniker": "ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama.pyproj",
+              "ToolTip": "C:\\Users\\Berat\\Documents\\GitHub\\ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama\\ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama.pyproj",
+              "RelativeToolTip": "ra_Degerlendirme_Odevi_1_Python_Mini_Uygulama.pyproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-11-09T12:57:51.891Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
