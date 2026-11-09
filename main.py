@@ -42,30 +42,33 @@ def ilaclari_listele(ilac_sozlugu):
         print("\nUyarı: Sisteme henüz eklenmiş bir ilaç bulunmuyor.")
         return
 
-    print("\n" + "="*30)
+    print("\n" + "="*55)
     print(" GÜNCEL İLAÇ VE TEDAVİ LİSTESİ")
-    print("="*30)
+    print("="*55)
     for ad, detay in ilac_sozlugu.items():
-        print(f"İlaç: {ad: <15} | Doz: {detay['doz']: <10} | Sıklık: {detay['saat_araligi']} saatte bir")
-    print("="*30)
+        print(f"İlaç: {ad: <15} | Doz: {detay['doz']: <15} | Sıklık: {detay['saat_araligi']} saatte bir")
+    print("="*55)
 
 
-def dosyaya_kaydet(ilac_sozlugu, dosya_adi="ilac_raporu.csv"):
-    """İlaç listesini bir CSV dosyasına kaydeder."""
+def dosyaya_kaydet(ilac_sozlugu, dosya_adi="yeni_rapor.csv"):
+    """İlaç listesini projenin olduğu klasöre CSV dosyası olarak kaydeder."""
     if not ilac_sozlugu:
         print("\nUyarı: Kaydedilecek ilaç bulunmuyor. Lütfen önce ilaç ekleyin.")
         return
 
     try:
-        # Dosyayı yazma (w) modunda açıyoruz.
-        with open(dosya_adi, "w", encoding="utf-8") as dosya:
-            # CSV Başlıkları
+        # main.py dosyasının kayıtlı olduğu tam klasör yolunu alıyoruz
+        proje_klasori = os.path.dirname(os.path.abspath(__file__))
+        tam_dosya_yolu = os.path.join(proje_klasori, dosya_adi)
+
+        # Dosyayı yazma (w) modunda açıyoruz
+        with open(tam_dosya_yolu, "w", encoding="utf-8") as dosya:
             dosya.write("Ilac Adi,Dozaj,Saat Araligi\n")
-            # Verileri virgülle ayırarak yazma
             for ad, detay in ilac_sozlugu.items():
                 dosya.write(f"{ad},{detay['doz']},{detay['saat_araligi']}\n")
                 
-        print(f"\nBaşarılı: İlaç listeniz '{dosya_adi}' dosyasına güvenle kaydedildi.")
+        print(f"\nBaşarılı: İlaç listeniz güvenle kaydedildi!")
+        print(f"Kaydedilen Konum: {tam_dosya_yolu}")
     except Exception as e:
         print(f"\nKritik Hata: Dosya kaydedilirken beklenmeyen bir sorun oluştu: {e}")
 
@@ -95,6 +98,7 @@ def ana_menu():
             break
         else:
             print("\nHatalı seçim! Lütfen 1 ile 4 arasında geçerli bir işlem numarası giriniz.")
+
 
 if __name__ == "__main__":
     ana_menu()
